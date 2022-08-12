@@ -46,9 +46,9 @@ export default class Cards extends React.Component {
             return <div>Chargement…</div>;
         } else {
             return (
-                <div className="component">
+                <div className="Cards">
                     <Container>
-                        <Row className="mt-5">
+                        <Row className="mt-5 pb-5">
                             {cards?.map((cards) => (
                                 <Col size={6} sm={6} md={4} key={`cards-${cards.name}`}
                                      to={`/cards/${cards.name}`}>

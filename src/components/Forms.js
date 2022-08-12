@@ -25,7 +25,7 @@ export default class Forms extends React.Component {
     render() {
 
         return (
-            <div className="component">
+            <div className="Forms">
                 <Container>
                     <Row>
                         <Col size={12} sm={12} md={12}>
