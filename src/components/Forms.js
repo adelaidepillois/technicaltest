@@ -5,7 +5,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
+import Select from 'react-select'
 
+    const myData = [
+        {text: 'Books', value: 1},
+        {text: 'Movies, Music & Games', value: 2},
+        {text: 'Electronics & Computers', value: 3},
+        {text: 'Home, Garden & Tools', value: 4},
+        {text: 'Health & Beauty', value: 5},
+        {text: 'Toys, Kids & Baby', value: 6},
+        {text: 'Clothing & Jewelry', value: 7},
+        {text: 'Sports & Outdoors', value: 8},
+        {text: 'Automotive & Industrial', value: 9}
+    ];
 
 export default class Forms extends React.Component {
 
@@ -20,16 +32,22 @@ export default class Forms extends React.Component {
                             <Form className="forms">
                                 <Row className="align-items-center d-flex">
                                     <Col size={3} sm={3} md={3}>
-                                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                                        <Form.Group className="mb-3" controlId="type">
                                             <Form.Label>Type</Form.Label>
-                                            <Form.Control type="type" placeholder="Type"/>
+                                            <Select
+                                                data={myData}
+                                                selectMultiple={true}
+                                                touchUi={false}
+                                            />
                                         </Form.Group>
                                     </Col>
 
                                     <Col size={3} sm={3} md={3}>
-                                        <Form.Group className="mb-3" controlId="formBasicPassword">
-                                            <Form.Label>Rareté</Form.Label>
-                                            <Form.Control type="rare" placeholder="Rarity"/>
+                                        <Form.Group className="mb-3"> <Form.Label>Rareté</Form.Label>
+                                            <Form.Select>
+                                                <option>Rare</option>
+                                                <option>Common</option>
+                                            </Form.Select>
                                         </Form.Group>
                                     </Col>
                                     <Col size={3} sm={3} md={3}>

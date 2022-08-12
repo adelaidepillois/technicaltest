@@ -69,7 +69,8 @@ h1 {
 
 .forms button {
 	position: relative;
-	top: 11px;
+	top: 8px;
+	width: 100%;
 }
 
 #rarity {
