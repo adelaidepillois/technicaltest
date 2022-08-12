@@ -7,17 +7,17 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Select from 'react-select'
 
-    const myData = [
-        {text: 'Books', value: 1},
-        {text: 'Movies, Music & Games', value: 2},
-        {text: 'Electronics & Computers', value: 3},
-        {text: 'Home, Garden & Tools', value: 4},
-        {text: 'Health & Beauty', value: 5},
-        {text: 'Toys, Kids & Baby', value: 6},
-        {text: 'Clothing & Jewelry', value: 7},
-        {text: 'Sports & Outdoors', value: 8},
-        {text: 'Automotive & Industrial', value: 9}
-    ];
+const myData = [
+    {text: 'Books', value: 1},
+    {text: 'Movies, Music & Games', value: 2},
+    {text: 'Electronics & Computers', value: 3},
+    {text: 'Home, Garden & Tools', value: 4},
+    {text: 'Health & Beauty', value: 5},
+    {text: 'Toys, Kids & Baby', value: 6},
+    {text: 'Clothing & Jewelry', value: 7},
+    {text: 'Sports & Outdoors', value: 8},
+    {text: 'Automotive & Industrial', value: 9}
+];
 
 export default class Forms extends React.Component {
 
@@ -45,8 +45,12 @@ export default class Forms extends React.Component {
                                     <Col size={3} sm={3} md={3}>
                                         <Form.Group className="mb-3"> <Form.Label>Rareté</Form.Label>
                                             <Form.Select>
-                                                <option>Rare</option>
                                                 <option>Common</option>
+                                                <option>Uncommon</option>
+                                                <option>Rare</option>
+                                                <option>Sythic rare</option>
+                                                <option>Special</option>
+                                                <option>Basic land</option>
                                             </Form.Select>
                                         </Form.Group>
                                     </Col>
